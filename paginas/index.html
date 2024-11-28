@@ -6,114 +6,299 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="../estilos/estilos.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
   </head>
 
-  <body>
+  <body class="bg-body-secondary">
     <div class="container-fluid" id="container-general">
-      <nav class="navbar navbar-expand-lg bg-primary">
+      <!--ENCABEZADO CON NAVBAR-->
+
+      <nav class="navbar navbar-expand-md bg-secondary bg-gradient p-4" id="menu">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img
-              width="55"
-              height="55"
+          <a href="index.html"
+            ><img
               src="../recursos/imagenes/logo.png"
-              alt="imagen"
-            />
+              class="img-fluid rounded-circle"
+              style="width: 55px; height: 55px; margin-right: 15px"
+              alt="logo"
+          /></a>
+          <a class="navbar-brand" href="#">
+            <span class="text-primary fs-3 fw-bold">GamesMods</span>
           </a>
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarScroll"
-            aria-controls="navbarScroll"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul
-              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
-              style="--bs-scroll-height: 100px"
-            >
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Ratones</a
+                <a class="nav-link active text-light" aria-current="page" href="index.html"
+                  >Inicio</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Link
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
+                <a class="nav-link text-light" href="#">Ratones</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Link</a>
+                <a class="nav-link text-light" href="#">Teclados</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Alfombrillas</a>
               </li>
             </ul>
-            <a
-              class="navbar-brand fs-1 text-secondary me-auto fw-bolder"
-              href="#"
-              >GamesMods</a
-            >
-            <form class="d-flex w-25" role="search">
+            <form class="d-flex align-items-center">
               <input
                 class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
+                type="email"
+                placeholder="Correo Electronico"
+                aria-label="email"
               />
+              <button class="btn btn-primary btn-primary-outline-success" type="button">
+                Login
+              </button>
+              <a href="#"><i class="bi bi-bag ms-2 text-secondary fs-4"></i></a>
             </form>
-            <a class="nav-link" href="#"><i class="bi bi-person" style="margin-left: 5px;"></i>Inicio Sesión</a>
           </div>
         </div>
       </nav>
+
+      <!--CARRUSEL-->
+
       <div
-        id="carouselExampleSlidesOnly"
+        id="carouselExampleAutoplaying"
         class="carousel slide"
         data-bs-ride="carousel"
       >
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item active" data-bs-interval="5000">
             <img
-              src="../recursos/imagenes/logo.png"
+              src="../recursos/imagenes/carrusel1.jpg"
               class="d-block w-100"
-              alt="..."
+              alt="slide1"
             />
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-bs-interval="5000">
             <img
-              src="../recursos/imagenes/logo.png"
+              src="../recursos/imagenes/carrusel2.jpg"
               class="d-block w-100"
-              alt="..."
+              alt="slide2"
             />
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-bs-interval="5000">
             <img
-              src="../recursos/imagenes/logo.png"
+              src="../recursos/imagenes/carrusel3.jpg"
               class="d-block w-100"
-              alt="..."
+              alt="slide3"
             />
           </div>
         </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+
+      <!--INTRO-->
+
+      <section class="w-75 mx-auto text-center pt-5" id="intro">
+        <h1 class="p-3 fs-2 border-top border-3">
+          Periféricos
+          <span class="text-primary">personalizados y exclusivos</span> al
+          alcance de todos
+        </h1>
+        <p class="p-3 fs-5">
+          <span class="text-primary">GamesMods</span> es el lugar donde puedes
+          expresar e implementar tus gustos y aficiones en tu set-up. Crea
+          diseños únicos inspirados en tus juegos favoritos o explora nuestras
+          colecciones personalizadas, con una calidad inigualable.
+        </p>
+      </section>
+
+      <!--PRODUCTOS-->
+
+      <section class="container-fluid" id="productos">
+        <div class="row w-75 mx-auto productos-fila">
+          <div
+            class="col-xl-4 col-md-12 col-lg-12 d-flex justify-content-start my-5 icono-wrap"
+          >
+            <div class="w-100">
+              <img
+                src="../recursos/imagenes/raton.png"
+                alt="raton gaming"
+                width="180px"
+                height="160px"
+              />
+            </div>
+            <div class="w-100">
+              <h3 class="fs-5 mt-4 px-4 pb-1">Ratones</h3>
+              <p class="px-4">Diseños ergonómicos y únicos para todo gamer.</p>
+            </div>
+          </div>
+          <div
+            class="col-xl-4 col-md-12 col-lg-12 d-flex justify-content-start my-5 icono-wrap"
+          >
+            <div class="w-100">
+              <img
+                src="../recursos/imagenes/teclado.png"
+                alt="raton gaming"
+                width="180px"
+                height="160px"
+              />
+            </div>
+            <div class="w-100">
+              <h3 class="fs-5 mt-4 px-4 pb-1">Teclados</h3>
+              <p class="px-4">
+                Teclados mecánicos adaptados a tus necesidades.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-xl-4 col-md-12 col-lg-12 d-flex justify-content-start my-5 icono-wrap"
+          >
+            <div class="w-100">
+              <img
+                src="../recursos/imagenes/alfombrilla.png"
+                alt="raton gaming"
+                width="180px"
+                height="160px"
+              />
+            </div>
+            <div class="w-100">
+              <h3 class="fs-5 mt-4 px-4 pb-1">Alfombrillas</h3>
+              <p class="px-4">>Personaliza tu espacio con diseños únicos.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--SOBRE NOSOTROS-->
+
+      <section>
+        <div
+          class="w-100 m-auto text-center mt-5 d-flex justify-content-center align-items-center flex-wrap"
+          id="equipo"
+        >
+          <div class="w-50">
+            <h1 class="mb-5 fs-2">
+              Un equipo dedicado a
+              <span class="text-primary">mejorar</span> tu experiencia
+            </h1>
+            <p class="fs-4">
+              En <span class="text-primary">CustomGear</span> trabajamos para
+              ofrecerte periféricos de máxima calidad, diseñados con pasión por
+              nuestro talentoso equipo.
+            </p>
+          </div>
+        </div>
+
+        <div id="local" class="d-flex align-items-center mt-5">
+          <div class="mapa"></div>
+          <div>
+            <div class="wrapper">
+              <h2>Ubicado en Huelva, Andalucía</h2>
+              <p class="fs-5 text-body">
+                Nuestra sede en Huelva es un reflejo de nuestra dedicación y
+                amor por la creatividad y tierra donde se creo el proyecto. Aquí
+                nace la magia que nos permite llegar a gamers de toda España.
+              </p>
+              <section class="d-flex" id="numeros-local">
+                <div>
+                  <p class="text-primary fs-5">365</p>
+                  <p>Días de inspiración</p>
+                </div>
+                <div>
+                  <p class="text-primary fs-5">100%</p>
+                  <p>Stisfacción garantizada</p>
+                </div>
+                <div>
+                  <p class="text-primary fs-5">24 ºC</p>
+                  <p>Temperatura</p>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--FOOTER-->
+
+      <footer class="bg-dark bg-gradient text-light py-4">
+        <div class="container">
+          <div class="row text-center text-md-start">
+            <div class="col-md-4 mb-3">
+              <h5 class="fw-bold">Dirección</h5>
+              <p class="mb-1">Calle Pozo de la Nieve, 7, 21200</p>
+              <p class="mb-0">Aracena, Huelva, España</p>
+            </div>
+
+            <div class="col-md-4 mb-3">
+              <h5 class="fw-bold">Horarios</h5>
+              <p class="mb-1">Lun - Vie: 11:00 - 23:00</p>
+              <p class="mb-0">Sáb - Dom: 11:00 - 24:00</p>
+            </div>
+
+            <div class="col-md-4 mb-3">
+              <h5 class="fw-bold">Contáctanos</h5>
+              <p class="mb-1">IbericBurger@gmail.com</p>
+              <p class="mb-0">+34 602 33 44 55</p>
+            </div>
+          </div>
+
+          <hr class="border-light" />
+
+          <div class="row text-center">
+            <div class="col-md-6 mb-2 mb-md-0">
+              <a href="#" class="text-light text-decoration-none me-3"
+                >Términos y Condiciones</a
+              >
+              <a href="#" class="text-light text-decoration-none"
+                >Política de privacidad</a
+              >
+            </div>
+
+            <div class="col-md-6">
+              <p class="mb-2 mb-md-0">
+                &copy; 2024 GamesMods. Todos los derechos reservados
+              </p>
+              <div class="d-inline-block">
+                <a href="#" class="text-light me-2"
+                  ><i class="bi bi-twitter"></i
+                ></a>
+                <a href="#" class="text-light me-2"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a href="#" class="text-light"
+                  ><i class="bi bi-tripadvisor"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
   <script src="../bootstrap/js/bootstrap.js"></script>
