@@ -1,109 +1,4 @@
 @charset "UTF-8";
-#container-general {
-  padding: 0;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  overflow-x: hidden;
-}
-
-#menu a {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-#menu button {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.carousel-inner {
-  max-height: 39rem;
-}
-
-.mapa {
-  background: url(../recursos/imagenes/mapa.png) no-repeat center center;
-  width: 100%;
-  height: 500px;
-}
-
-#local {
-  padding-bottom: 100px;
-}
-
-.wrapper {
-  width: 50%;
-  margin-left: 100px;
-}
-
-#numeros-local div {
-  padding: 0 20px 0 0;
-  height: 48px;
-}
-
-#numeros-local div:not(:last-child) {
-  border-right: 2px solid #3f3f3f;
-}
-
-#numeros-local div:not(:first-child) {
-  padding-left: 20px;
-}
-
-#numeros-local p {
-  margin: 0;
-}
-
-#iconos i {
-  font-size: 26px;
-  padding: 0 8px;
-}
-
-#equipo {
-  height: 565px;
-  background: url(../recursos/imagenes/equipoDeTrabajo.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-#equipo div {
-  background-color: rgba(0, 0, 0, 0.6);
-  color: #FFFFFF;
-  padding: 10px 15px;
-  border-radius: 5px;
-}
-
-#ratones {
-  height: 565px;
-  background: url(../recursos/imagenes/cropped-ratones.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-@media (max-width: 1200px) {
-  #local {
-    flex-wrap: wrap;
-    padding-top: 30px;
-  }
-  .wrapper {
-    width: 90%;
-    margin: auto;
-    padding-top: 50px;
-  }
-}
-@media (max-width: 768px) {
-  #intro, #equipo {
-    width: 90% !important;
-  }
-  .productos-fila {
-    width: 100% !important;
-    text-align: center;
-  }
-}
-@media (max-width: 576px) {
-  .icono-wrap {
-    flex-wrap: wrap;
-    justify-content: center !important;
-  }
-}
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -7702,10 +7597,6 @@ textarea.form-control-lg {
   width: 75% !important;
 }
 
-.w-90 {
-  width: 90% !important;
-}
-
 .w-100 {
   width: 100% !important;
 }
@@ -12073,4 +11964,4 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
-}/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=bootstrap.css.map */

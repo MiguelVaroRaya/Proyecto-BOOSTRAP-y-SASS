@@ -71,6 +71,12 @@ body{
   border-radius: 5px; 
 }
 
+#ratones {
+  height: 565px;
+  background: url(../recursos/imagenes/cropped-ratones.jpg) no-repeat center center;
+  background-size: cover;
+}
+
 @media (max-width:1200px) {
   #local {
     flex-wrap: wrap;
