@@ -64,16 +64,23 @@ body{
   background-size: cover;
 }
 
-#equipo div {
-  background-color: rgba(0, 0, 0, 0.6); 
-  color: #FFFFFF; 
-  padding: 10px 15px; 
-  border-radius: 5px; 
-}
-
 #ratones {
   background: url(../recursos/imagenes/cropped-ratones.jpg) no-repeat center center;
   background-size: cover;
+}
+
+#teclados {
+  background: url(../recursos/imagenes/teclado_setup2.avif) no-repeat center center;
+  background-size: cover;
+}
+
+#alfombrillas {
+  background: url(../recursos/imagenes/alfombrilla_fondo.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#text-shadow {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 @media (max-width:1200px) {
@@ -106,5 +113,7 @@ body{
     justify-content: center !important;
   }
 }
+
+$body-secondary-bg: #f2f2f2;
 
 @import "../bootstrap/scss/bootstrap.scss";
