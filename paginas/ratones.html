@@ -67,7 +67,7 @@
                 <a class="nav-link text-light" href="contacto.html">Contacto</a>
               </li>
             </ul>
-            <form class="d-flex align-items-center">
+            <div class="d-flex align-items-center">
               <input
                 class="form-control me-2"
                 type="search"
@@ -80,16 +80,54 @@
               >
                 Buscar
               </button>
-              <button
-                class="btn btn-primary btn-primary-outline-success"
-                type="button"
-              >
-                <a href="login.html" class="text-light nav-link">Login</a>
-              </button>
+              <div class="dropdown dropstart">
+                <button
+                  type="button"
+                  class="btn btn-primary dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  data-bs-auto-close="outside"
+                >
+                  Login
+                </button>
+                <form class="dropdown-menu p-4" style="width: 300px">
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Correo electronico"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      placeholder="Contraseña"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="dropdownCheck2"
+                      />
+                      <label class="form-check-label" for="dropdownCheck2">
+                        Recuerdame
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Inicio Sesión</button>
+                </form>
+              </div>
               <a href="carrito.html"
                 ><i class="bi bi-bag ms-2 text-light fs-4"></i
               ></a>
-            </form>
+            </div>
           </div>
         </div>
       </nav>
@@ -291,5 +329,5 @@
       </footer>
     </div>
   </body>
-  <script src="../bootstrap/js/bootstrap.js"></script>
+  <script src="../bootstrap/js/bootstrap.bundle.js"></script>
 </html>
