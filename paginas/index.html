@@ -16,7 +16,10 @@
     <div class="container-fluid" id="container-general">
       <!--ENCABEZADO CON NAVBAR-->
 
-      <nav class="navbar navbar-expand-md bg-secondary bg-gradient p-4" id="menu">
+      <nav
+        class="navbar navbar-expand-xl bg-dark bg-gradient p-4"
+        id="menu"
+      >
         <div class="container-fluid">
           <a href="index.html"
             ><img
@@ -42,7 +45,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link text-light" aria-current="page" href="index.html"
+                <a
+                  class="nav-link text-light"
+                  aria-current="page"
+                  href="index.html"
                   >Inicio</a
                 >
               </li>
@@ -53,7 +59,9 @@
                 <a class="nav-link text-light" href="teclado.html">Teclados</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="alfombrilla.html">Alfombrillas</a>
+                <a class="nav-link text-light" href="alfombrilla.html"
+                  >Alfombrillas</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link text-light" href="contacto.html">Contacto</a>
@@ -66,34 +74,61 @@
                 placeholder="Buscar"
                 aria-label="email"
               />
-              <button class="btn btn-primary btn-primary-outline-success me-2" type="button">
-                Buscar
+              <button
+                class="btn btn-primary btn-primary-outline-success me-2"
+                type="button"
+              >
+                <i class="bi bi-search"></i>
               </button>
               <div class="dropdown dropstart">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                <button
+                  type="button"
+                  class="btn btn-primary dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  data-bs-auto-close="outside"
+                >
                   Login
                 </button>
-                <form class="dropdown-menu p-4" style="width: 300px;">
+                <form class="dropdown-menu p-4 mt-5" style="width: 300px">
                   <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Correo electronico">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Correo electronico"
+                    />
                   </div>
                   <div class="mb-3">
                     <label for="password" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="password" placeholder="Contraseña">
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      placeholder="Contraseña"
+                    />
                   </div>
                   <div class="mb-3">
                     <div class="form-check">
-                      <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="dropdownCheck2"
+                      />
                       <label class="form-check-label" for="dropdownCheck2">
                         Recuerdame
                       </label>
                     </div>
                   </div>
-                  <button type="submit" class="btn btn-primary">Inicio Sesión</button>
+                  <button type="submit" class="btn btn-primary">
+                    Inicio Sesión
+                  </button>
                 </form>
               </div>
-              <a href="carrito.html"><i class="bi bi-bag ms-2 text-light fs-4"></i></a>
+              <a href="carrito.html"
+                ><i class="bi bi-bag ms-2 text-light fs-4"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -107,37 +142,49 @@
         data-bs-ride="carousel"
       >
         <div class="carousel-inner">
-          <div class="carousel-item active w-100" style="height: 600px;" data-bs-interval="3000">
+          <div class="carousel-item active w-100" data-bs-interval="3000">
             <img
               src="../recursos/imagenes/cropped-ratones.jpg"
               class="d-block w-100"
               alt="slide1"
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="text-primary fs-1 fw-bold">¡Personaliza tu experiencia gaming!</h5>
-              <p>Some representative placeholder content for the first slide.</p>
+            <div
+              class="position-absolute top-50 start-50 translate-middle d-none d-md-block w-100"
+            >
+              <h5 class="text-primary fs-1 fw-bold text-center">
+                ¡Personaliza tu experiencia gaming!
+              </h5>
             </div>
           </div>
-          <div class="carousel-item w-100" style="height: 600px;"" data-bs-interval="3000">
+          <div class="carousel-item w-100" data-bs-interval="3000">
             <img
               src="../recursos/imagenes/teclado_setup2.avif"
               class="d-block w-100"
               alt="slide2"
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="text-primary fs-1">¡Personaliza tu experiencia gaming!</h5>
-              <p>Some representative placeholder content for the first slide.</p>
+            <div
+              class="position-absolute top-50 start-50 translate-middle d-none d-md-block"
+            >
+              <h5 class="text-primary fs-1 text-center">
+                ¡Personaliza tu experiencia gaming!
+              </h5>
             </div>
           </div>
-          <div class="carousel-item w-100" style="height: 600px;"" data-bs-interval="3000">
+          <div class="carousel-item w-100" data-bs-interval="3000">
             <img
               src="../recursos/imagenes/cropped-ratones2.jpg"
               class="d-block w-100"
               alt="slide3"
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="text-primary fs-1">¡Personaliza tu experiencia gaming!</h5>
-              <p>Some representative placeholder content for the first slide.</p>
+            <div
+              class="position-absolute top-50 start-50 translate-middle d-none d-md-block"
+            >
+              <h5 class="text-primary fs-2 text-center">
+                ¡Personaliza tu experiencia gaming!
+              </h5>
+              <p class="text-center fs-5 text-light">
+                Some representative placeholder content for the first slide.
+              </p>
             </div>
           </div>
         </div>
@@ -184,7 +231,7 @@
           <div
             class="col-xl-4 col-lg-12 d-flex justify-content-start my-5 icono-wrap"
           >
-            <div>
+            <div class="w-100">
               <img
                 src="../recursos/imagenes/raton_gris.webp"
                 alt="raton gaming"
@@ -241,13 +288,13 @@
           class="w-100 m-auto text-center mt-5 d-flex justify-content-center align-items-center flex-wrap p-5"
           id="equipo"
         >
-          <div class="w-50 p-4 bg-dark bg-opacity-50 text-white rounded p-3">
+          <div class="w-50 p-4 bg-dark bg-opacity-50 text-white rounded">
             <h1 class="mb-5 fs-2">
               Un equipo dedicado a
               <span class="text-primary">mejorar</span> tu experiencia
             </h1>
             <p class="fs-4">
-              En <span class="text-primary">CustomGear</span> trabajamos para
+              En <span class="text-primary">GamesMods</span> trabajamos para
               ofrecerte periféricos de máxima calidad, diseñados con pasión por
               nuestro talentoso equipo.
             </p>
@@ -330,9 +377,7 @@
                 <a href="#" class="text-light me-2"
                   ><i class="bi bi-instagram"></i
                 ></a>
-                <a href="#" class="text-light"
-                  ><i class="bi bi-youtube"></i
-                ></a>
+                <a href="#" class="text-light"><i class="bi bi-youtube"></i></a>
               </div>
             </div>
           </div>
