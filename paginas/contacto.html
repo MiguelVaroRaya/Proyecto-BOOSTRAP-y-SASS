@@ -49,16 +49,39 @@
                   >Inicio</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="ratones.html">Ratones</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="teclado.html">Teclados</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="alfombrilla.html"
-                  >Alfombrillas</a
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-light"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
+                  Productos
+                </a>
+                <ul class="dropdown-menu bg-dark">
+                  <li>
+                    <a
+                      class="dropdown-item text-light bg-dark"
+                      href="../paginas/ratones.html"
+                      >Ratones</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-light bg-dark"
+                      href="../paginas/teclado.html"
+                      >Teclados</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-light bg-dark"
+                      href="../paginas/alfombrilla.html"
+                      >Alfombrillas</a
+                    >
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-light" href="contacto.html">Contacto</a>
@@ -139,7 +162,10 @@
           id="nosotros"
         >
           <div class="w-50 p-4">
-            <h1 class="mb-5 fs-1 text-light fw-bold d-flex justify-content-center align-items-center" id="text-shadow">
+            <h1
+              class="mb-5 fs-1 text-light fw-bold d-flex justify-content-center align-items-center"
+              id="text-shadow"
+            >
               SOBRE NOSOTROS
             </h1>
           </div>
@@ -150,13 +176,11 @@
 
       <div class="w-100 m-auto text-center p-4">
         <div class="bg-dark bg-opacity-25 rounded">
-          <div
-            class="w-100 row justify-content-center align-items-center"
-          >
+          <div class="w-100 row justify-content-center align-items-center">
             <h2
               class="border-bottom w-auto p-3 mb-4 mt-3 border-5 border-primary fw-bold"
             >
-              Historia y Pasión
+              Nuestra historia
             </h2>
             <section class="row align-items-center">
               <div class="col-md-6 text-center mb-4 mb-md-0">
@@ -164,11 +188,11 @@
                   src="../recursos/imagenes/equipoDeTrabajo.jpg"
                   alt=""
                   class="img-fluid rounded"
-                  style="max-width: 100%;"
+                  style="max-width: 100%"
                 />
               </div>
               <div class="col-md-6">
-                <p class="m-3 text-start">
+                <p class="m-3 text-center">
                   Bienvenidos a Iberic Burguers, el restaurante familiar de
                   hamburguesas de gran calidad basado en la sierra de Aracena,
                   su gastronomía y sus lugares únicos. Aquí en Iberic Burguers,
@@ -182,9 +206,14 @@
                 </p>
               </div>
             </section>
-            <section class="row align-items-center mt-4">
+            <h2
+              class="border-bottom w-auto p-3 mb-4 mt-3 border-5 border-primary fw-bold"
+            >
+              Pasion y dedicación
+            </h2>
+            <section class="row align-items-center mt-4 mb-4">
               <div class="col-md-6 order-md-1">
-                <p class="m-3 text-start">
+                <p class="m-3 text-center">
                   Bienvenidos a Iberic Burguers, el restaurante familiar de
                   hamburguesas de gran calidad basado en la sierra de Aracena,
                   su gastronomía y sus lugares únicos. Aquí en Iberic Burguers,
@@ -202,10 +231,50 @@
                   src="../recursos/imagenes/equipoDeTrabajo.jpg"
                   alt=""
                   class="img-fluid rounded"
-                  style="max-width: 100%;"
+                  style="max-width: 100%"
                 />
               </div>
             </section>
+          </div>
+        </div>
+      </div>
+
+      <!--UBICACIÓN-->
+
+      <div id="local" class="container mt-5">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-12 text-center mb-4 mb-lg-0">
+            <div class="mapa bg-secondary rounded" style="height: 300px"></div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="wrapper text-center text-lg-start w-100">
+              <h2 class="fw-bold text-primary text-center mb-3">
+                Ubicado en Huelva, Andalucía
+              </h2>
+              <p class="fs-5 text-muted text-center">
+                Nuestra sede en Huelva es un reflejo de nuestra dedicación y
+                amor por la creatividad y la tierra donde se creó el proyecto.
+                Aquí nace la magia que nos permite llegar a gamers de toda
+                España.
+              </p>
+              <section
+                class="d-flex justify-content-between align-items-center text-center mt-4"
+                id="numeros-local"
+              >
+                <div>
+                  <p class="text-primary display-6">365</p>
+                  <p class="text-muted">Días de inspiración</p>
+                </div>
+                <div>
+                  <p class="text-primary display-6">100%</p>
+                  <p class="text-muted">Satisfacción garantizada</p>
+                </div>
+                <div>
+                  <p class="text-primary display-6">24 ºC</p>
+                  <p class="text-muted">Temperatura</p>
+                </div>
+              </section>
+            </div>
           </div>
         </div>
       </div>

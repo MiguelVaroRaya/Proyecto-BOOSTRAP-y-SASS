@@ -16,10 +16,7 @@
     <div class="container-fluid" id="container-general">
       <!--ENCABEZADO CON NAVBAR-->
 
-      <nav
-        class="navbar navbar-expand-xl bg-dark bg-gradient p-4"
-        id="menu"
-      >
+      <nav class="navbar navbar-expand-xl bg-dark bg-gradient p-4" id="menu">
         <div class="container-fluid">
           <a href="index.html"
             ><img
@@ -52,19 +49,44 @@
                   >Inicio</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="../paginas/ratones.html">Ratones</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="../paginas/teclado.html">Teclados</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="../paginas/alfombrilla.html"
-                  >Alfombrillas</a
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-light"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
+                  Productos
+                </a>
+                <ul class="dropdown-menu bg-dark">
+                  <li>
+                    <a
+                      class="dropdown-item text-light bg-dark"
+                      href="../paginas/ratones.html"
+                      >Ratones</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-light bg-dark"
+                      href="../paginas/teclado.html"
+                      >Teclados</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-light bg-dark"
+                      href="../paginas/alfombrilla.html"
+                      >Alfombrillas</a
+                    >
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="../paginas/contacto.html">Contacto</a>
+                <a class="nav-link text-light" href="../paginas/contacto.html"
+                  >Contacto</a
+                >
               </li>
             </ul>
             <div class="d-flex align-items-center">
@@ -281,54 +303,15 @@
         </div>
       </section>
 
-      <!--SOBRE NOSOTROS-->
+      <!--RECONDADO-->
 
-      <section>
-        <div
-          class="w-100 m-auto text-center mt-5 d-flex justify-content-center align-items-center flex-wrap p-5"
-          id="equipo"
+      <div class="w-100 row justify-content-center align-items-center">
+        <h2
+          class="border-bottom w-auto p-3 mb-4 mt-3 border-5 border-primary fw-bold"
         >
-          <div class="w-50 p-4 bg-dark bg-opacity-50 text-white rounded">
-            <h1 class="mb-5 fs-2">
-              Un equipo dedicado a
-              <span class="text-primary">mejorar</span> tu experiencia
-            </h1>
-            <p class="fs-4">
-              En <span class="text-primary">GamesMods</span> trabajamos para
-              ofrecerte periféricos de máxima calidad, diseñados con pasión por
-              nuestro talentoso equipo.
-            </p>
-          </div>
-        </div>
-
-        <div id="local" class="d-flex align-items-center mt-5">
-          <div class="mapa"></div>
-          <div>
-            <div class="wrapper">
-              <h2>Ubicado en Huelva, Andalucía</h2>
-              <p class="fs-5 text-body">
-                Nuestra sede en Huelva es un reflejo de nuestra dedicación y
-                amor por la creatividad y tierra donde se creo el proyecto. Aquí
-                nace la magia que nos permite llegar a gamers de toda España.
-              </p>
-              <section class="d-flex" id="numeros-local">
-                <div>
-                  <p class="text-primary fs-5">365</p>
-                  <p>Días de inspiración</p>
-                </div>
-                <div>
-                  <p class="text-primary fs-5">100%</p>
-                  <p>Stisfacción garantizada</p>
-                </div>
-                <div>
-                  <p class="text-primary fs-5">24 ºC</p>
-                  <p>Temperatura</p>
-                </div>
-              </section>
-            </div>
-          </div>
-        </div>
-      </section>
+          Nuestros Sponsors
+        </h2>
+      </div>
 
       <!--FOOTER-->
 
