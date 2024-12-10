@@ -268,7 +268,15 @@
               />
             </div>
             <div class="w-100">
-              <h3 class="fs-5 mt-4 px-4 pb-1">Ratones</h3>
+              <h3 class="fs-5 mt-4 px-4 pb-1 d-inline-block">
+                <a
+                  class="nav-link"
+                  href="../paginas/ratones.html"
+                  data-bs-toggle="tooltip"
+                  data-bs-title="Echa un vistazo a nuestros ratones"
+                  >Ratones</a
+                >
+              </h3>
               <p class="px-4">Diseños ergonómicos y únicos para todo gamer.</p>
             </div>
           </div>
@@ -284,7 +292,15 @@
               />
             </div>
             <div class="w-100">
-              <h3 class="fs-5 mt-4 px-4 pb-1">Teclados</h3>
+              <h3 class="fs-5 mt-4 px-4 pb-1 d-inline-block">
+                <a
+                  class="nav-link"
+                  href="../paginas/teclado.html"
+                  data-bs-toggle="tooltip"
+                  data-bs-title="Mira nuestros increíbles teclados"
+                  >Teclados</a
+                >
+              </h3>
               <p class="px-4">
                 Teclados mecánicos adaptados a tus necesidades.
               </p>
@@ -302,7 +318,15 @@
               />
             </div>
             <div class="w-100">
-              <h3 class="fs-5 mt-4 px-4 pb-1">Alfombrillas</h3>
+              <h3 class="fs-5 mt-4 px-4 pb-1 d-inline-block">
+                <a
+                  class="nav-link"
+                  href="../paginas/alfombrilla.html"
+                  data-bs-toggle="tooltip"
+                  data-bs-title="Conoce nuestras alfombrillas de diseño"
+                  >Alfombrillas</a
+                >
+              </h3>
               <p class="px-4">Personaliza tu espacio con diseños únicos.</p>
             </div>
           </div>
@@ -356,7 +380,7 @@
             class="col-md-4 col-lg-6 d-flex justify-content-center align-items-center"
           >
             <img
-              src="../recursos/imagenes/patrocinador4.png"
+              src="../recursos/imagenes/patrocinador4.jpg"
               alt="Patrocinador 4"
               class="img-fluid"
               style="max-height: 100px"
@@ -421,4 +445,12 @@
     </div>
   </body>
   <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll(
+      '[data-bs-toggle="tooltip"]'
+    );
+    const tooltipList = [...tooltipTriggerList].map(
+      (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+    );
+  </script>
 </html>

@@ -115,7 +115,11 @@
                 >
                   Login
                 </button>
-                <form class="dropdown-menu p-4 mt-5" style="width: 300px" data-bs-theme="light">
+                <form
+                  class="dropdown-menu p-4 mt-5"
+                  style="width: 300px"
+                  data-bs-theme="light"
+                >
                   <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
                     <input
@@ -210,7 +214,14 @@
             <h3 class="card-title">Logitech Pro X SUPERLIGHT 2 DEX</h3>
             <p class="card-text">Ratón inalámbrico LIGHTSPEED para gaming</p>
             <div class="d-flex justify-content-between flex-column flex-lg-row">
-              <a href="#" class="btn btn-primary d-flex align-items-center"
+              <a
+                class="btn btn-primary d-flex align-items-center"
+                data-bs-toggle="popover"
+                data-bs-placement="top"
+                data-bs-trigger="focus"
+                data-bs-title="Operación completada"
+                data-bs-content="El producto ha sido añadido al carrito"
+                tabindex="0"
                 >Añadir al carrito</a
               >
               <p class="fs-3 fw-bold mb-0">
@@ -229,7 +240,15 @@
             <h3 class="card-title">Logitech Pro 2 LIGHTSPEED</h3>
             <p class="card-text">Ratón inalámbrico ambidiestro para juegos</p>
             <div class="d-flex justify-content-between flex-column flex-lg-row">
-              <a href="#" class="btn btn-primary d-flex align-items-center"
+              <a
+                role="button"
+                class="btn btn-primary d-flex align-items-center"
+                data-bs-toggle="popover"
+                data-bs-placement="top"
+                data-bs-trigger="focus"
+                data-bs-title="Operación completada"
+                data-bs-content="El producto ha sido añadido al carrito"
+                tabindex="0"
                 >Añadir al carrito</a
               >
               <p class="fs-3 fw-bold mb-0">
@@ -248,7 +267,15 @@
             <h3 class="card-title">Logitech G705</h3>
             <p class="card-text">Ratón inalámbrico de diseño para gaming</p>
             <div class="d-flex justify-content-between flex-column flex-lg-row">
-              <a href="#" class="btn btn-primary d-flex align-items-center"
+              <a
+                role="button"
+                class="btn btn-primary d-flex align-items-center"
+                data-bs-toggle="popover"
+                data-bs-placement="top"
+                data-bs-trigger="focus"
+                data-bs-title="Operación completada"
+                data-bs-content="El producto ha sido añadido al carrito"
+                tabindex="0"
                 >Añadir al carrito</a
               >
               <p class="fs-3 fw-bold mb-0">
@@ -372,4 +399,12 @@
     </div>
   </body>
   <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+  <script>
+    const popoverTriggerList = document.querySelectorAll(
+      '[data-bs-toggle="popover"]'
+    );
+    const popoverList = [...popoverTriggerList].map(
+      (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+    );
+  </script>
 </html>
