@@ -16,13 +16,17 @@
     <div class="container-fluid" id="container-general">
       <!--ENCABEZADO CON NAVBAR-->
 
-      <nav class="navbar navbar-expand-xl bg-dark bg-gradient p-4" id="menu">
+      <nav
+        class="navbar navbar-expand-xl bg-dark bg-gradient p-0 pe-4"
+        id="menu"
+        data-bs-theme="dark"
+      >
         <div class="container-fluid">
           <a href="index.html"
             ><img
-              src="../recursos/imagenes/logo.png"
+              src="../recursos/imagenes/logoSinFondo.png"
               class="img-fluid rounded-circle"
-              style="width: 55px; height: 55px; margin-right: 15px"
+              style="width: 120px; height: 120px; margin-right: 5px"
               alt="logo"
           /></a>
           <a class="navbar-brand" href="index.html">
@@ -95,6 +99,7 @@
                 type="search"
                 placeholder="Buscar"
                 aria-label="email"
+                data-bs-theme="light"
               />
               <button
                 class="btn btn-primary btn-primary-outline-success me-2"
@@ -112,7 +117,11 @@
                 >
                   Login
                 </button>
-                <form class="dropdown-menu p-4 mt-5" style="width: 230px">
+                <form
+                  class="dropdown-menu p-4 mt-5"
+                  style="width: 230px"
+                  data-bs-theme="light"
+                >
                   <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
                     <input
@@ -171,9 +180,9 @@
               alt="slide1"
             />
             <div
-              class="position-absolute top-50 start-50 translate-middle d-none d-md-block w-100"
+              class="position-absolute top-50 start-50 translate-middle bg-dark bg-opacity-50 px-4 py-2 rounded shadow"
             >
-              <h5 class="text-primary fs-1 fw-bold text-center">
+              <h5 class="text-white fs-1 fw-bold text-center">
                 ¡Personaliza tu experiencia gaming!
               </h5>
             </div>
@@ -185,10 +194,10 @@
               alt="slide2"
             />
             <div
-              class="position-absolute top-50 start-50 translate-middle d-none d-md-block"
+              class="position-absolute top-50 start-50 translate-middle bg-dark bg-opacity-50 px-4 py-2 rounded shadow"
             >
-              <h5 class="text-primary fs-1 text-center">
-                ¡Personaliza tu experiencia gaming!
+              <h5 class="text-white fs-1 fw-bold text-center">
+                ¡Haz tu set-up perfecto y diferente!
               </h5>
             </div>
           </div>
@@ -199,14 +208,11 @@
               alt="slide3"
             />
             <div
-              class="position-absolute top-50 start-50 translate-middle d-none d-md-block"
+              class="position-absolute top-50 start-50 translate-middle bg-dark bg-opacity-50 px-4 py-2 rounded shadow"
             >
-              <h5 class="text-primary fs-2 text-center">
-                ¡Personaliza tu experiencia gaming!
+              <h5 class="text-white fs-1 fw-bold text-center">
+                ¡Domina el juego con estilo único!
               </h5>
-              <p class="text-center fs-5 text-light">
-                Some representative placeholder content for the first slide.
-              </p>
             </div>
           </div>
         </div>
@@ -305,12 +311,58 @@
 
       <!--RECONDADO-->
 
-      <div class="w-100 row justify-content-center align-items-center">
-        <h2
-          class="border-bottom w-auto p-3 mb-4 mt-3 border-5 border-primary fw-bold"
-        >
-          Nuestros Sponsors
-        </h2>
+      <div class="container py-5">
+        <div class="container text-center py-5">
+          <h2 class="position-relative d-inline-block fw-bold text-dark">
+            <i class="bi bi-stars text-warning"></i>
+            Nuestros Sponsors
+          </h2>
+          <div
+            class="border-bottom border-3 border-primary mt-2 w-50 mx-auto"
+          ></div>
+        </div>
+        <div class="row g-4 justify-content-center mt-3">
+          <div
+            class="col-md-4 col-lg-6 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="../recursos/imagenes/patrocinador1.png"
+              alt="Patrocinador 1"
+              class="img-fluid"
+              style="max-height: 100px"
+            />
+          </div>
+          <div
+            class="col-md-4 col-lg-6 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="../recursos/imagenes/patrocinador2.png"
+              alt="Patrocinador 2"
+              class="img-fluid"
+              style="max-height: 100px"
+            />
+          </div>
+          <div
+            class="col-md-4 col-lg-6 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="../recursos/imagenes/patrocinador3.png"
+              alt="Patrocinador 3"
+              class="img-fluid"
+              style="max-height: 100px"
+            />
+          </div>
+          <div
+            class="col-md-4 col-lg-6 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="../recursos/imagenes/patrocinador4.png"
+              alt="Patrocinador 4"
+              class="img-fluid"
+              style="max-height: 100px"
+            />
+          </div>
+        </div>
       </div>
 
       <!--FOOTER-->
