@@ -133,7 +133,7 @@ body {
  */
 @font-face {
   font-family: "Limelight";
-  src: url("../../recursos/fuentes/AbrilFatface-Regular.ttf") format("truetype");
+  src: url("../../recursos/fuentes/Limelight-Regular.ttf") format("truetype");
   font-weight: bold;
   font-style: bold;
 }
