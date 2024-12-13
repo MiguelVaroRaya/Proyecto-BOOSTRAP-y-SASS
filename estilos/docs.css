@@ -4,6 +4,27 @@
  * Licensed under the Creative Commons Attribution 3.0 Unported License.
  * For details, see https://creativecommons.org/licenses/by/3.0/.
  */
+@font-face {
+  font-family: "Limelight";
+  src: url("../../recursos/fuentes/AbrilFatface-Regular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: bold;
+}
+.miFuente {
+  font-family: "Limelight", sans-serif;
+  color: #7f2a2a;
+}
+
+.miFuente2 {
+  font-family: "Limelight", sans-serif;
+  color: #4d1a1a;
+}
+
+.miFuente3 {
+  font-family: "Limelight", sans-serif;
+  color: white;
+}
+
 :root {
   --bs-breakpoint-xs: 0;
   --bs-breakpoint-sm: 576px;

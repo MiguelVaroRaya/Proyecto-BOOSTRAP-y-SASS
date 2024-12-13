@@ -298,6 +298,8 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
+$primario: #7f2a2a;
+$secundario: #4d1a1a;
 $primary:       $blue !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
@@ -310,8 +312,9 @@ $dark:          $gray-900 !default;
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
-  "primary":    $primary,
+  "primary":    $primario,
   "secondary":  $secondary,
+  "terciario":  $secundario,
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
@@ -605,6 +608,29 @@ $aspect-ratios: (
 // stylelint-disable value-keyword-case
 $font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+@font-face {
+  font-family: 'Limelight';
+  src: url('../../recursos/fuentes/AbrilFatface-Regular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: bold;
+}
+
+.miFuente {
+  font-family: 'Limelight', sans-serif;
+  color: $primario;
+}
+
+.miFuente2 {
+  font-family: 'Limelight', sans-serif;
+  color: $secundario;
+}
+
+.miFuente3 {
+  font-family: 'Limelight', sans-serif;
+  color: white;
+}
+
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$prefix}font-sans-serif) !default;
 $font-family-code:            var(--#{$prefix}font-monospace) !default;
@@ -630,11 +656,11 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
+$h1-font-size:                $font-size-base * 3 !default;
+$h2-font-size:                $font-size-base * 2.5 !default;
+$h3-font-size:                $font-size-base * 2 !default;
+$h4-font-size:                $font-size-base * 1.75 !default;
+$h5-font-size:                $font-size-base * 1.50 !default;
 $h6-font-size:                $font-size-base !default;
 // scss-docs-end font-variables
 

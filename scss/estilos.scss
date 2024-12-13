@@ -84,6 +84,11 @@ body{
   background-size: cover;
 }
 
+#catalogo {
+  background: url(../recursos/imagenes/catalogo.avif) no-repeat center center;
+  background-size: cover;
+}
+
 #text-shadow {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
@@ -117,6 +122,13 @@ body{
     flex-wrap: wrap;
     justify-content: center !important;
   }
+}
+
+@font-face {
+  font-family: 'Titulos';
+  src: url('../recursos/fuentes/Limelight-Regular.ttf') format('ttf');
+  font-weight: bold;
+  font-style: bold;
 }
 
 $body-secondary-bg: #f2f2f2;
