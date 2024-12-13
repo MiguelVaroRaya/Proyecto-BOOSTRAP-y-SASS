@@ -16,7 +16,7 @@
 
 .miFuente2 {
   font-family: "Limelight", sans-serif;
-  color: #4d1a1a;
+  color: #d44444;
 }
 
 .miFuente3 {
@@ -51,7 +51,7 @@
   --bs-gray-900: #212529;
   --bs-primary: #7f2a2a;
   --bs-secondary: #6c757d;
-  --bs-terciario: #4d1a1a;
+  --bs-terciario: #d44444;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
@@ -60,7 +60,7 @@
   --bs-dark: #212529;
   --bs-primary-rgb: 127, 42, 42;
   --bs-secondary-rgb: 108, 117, 125;
-  --bs-terciario-rgb: 77, 26, 26;
+  --bs-terciario-rgb: 212, 68, 68;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -93,7 +93,7 @@
   --bs-dark-border-subtle: #adb5bd;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: "Helvetica", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
